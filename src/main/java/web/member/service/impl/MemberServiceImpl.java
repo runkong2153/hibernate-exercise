@@ -61,7 +61,7 @@ public class MemberServiceImpl implements MemberService {
 			member.setMessage("註冊錯誤，請聯絡管理員!");
 			member.setSuccessful(false);
 			rollback();
-			e.printStackTrace();
+			return member;
 		}
 	}
 
